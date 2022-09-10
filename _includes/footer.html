@@ -9,9 +9,9 @@
             <a class="logo d-flex align-items-center" href="{% if page.layout == 'default'  %}/{% endif %}{{ item.url }}/#hero">
                 {% if site.logo %}
                 <img src="{{site.logo}}" class="img-fluid" alt="Calnetic"> 
-                {% else %}
+                {% endif %} 
+                
                 <span>{{ site.title}}</span>
-              {% endif %} 
             </a>             
             <p>{{site.footer.about}}</p>
 

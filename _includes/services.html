@@ -8,7 +8,7 @@
     {% for item in site.home.services.items %}
         {% assign mod = forloop.index | modulo: 2 %}
         <div class="row gx-0 my-4">
-            <div class="col-lg-6 d-flex flex-column justify-content-center {% if mod == 0 %}order-1 {% endif %}" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6 d-flex flex-column justify-content-center {% if mod == 0 %}order-md-1  {% endif %}" data-aos="fade-up" data-aos-delay="200">
                 <div class="content">
                     <h3>{{item.heading}}  {{}}</h3>
                     <h2>{{item.subHeading}}</h2>

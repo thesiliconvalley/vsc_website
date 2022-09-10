@@ -1,6 +1,6 @@
 title: VALLEY STARTUP CONSULTANT
 email: info@valleysc.in
-# logo: "/assets/img/White-&-Orange-Dot-Horizontal-Logo-2.svg"
+logo: "/assets/img/logo.png"
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -32,7 +32,7 @@ home:
       body:
     - heading: "IoT"
       subHeading: "Gathering data from various IoT devices and solving different use cases and real-time tracking, condition monitoring and live location data."
-      image: "assets/img/png.png"
+      image: "assets/img/iot.jpg"
       body:
   contact:
     enabled:
