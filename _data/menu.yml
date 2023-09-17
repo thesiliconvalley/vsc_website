@@ -1,0 +1,8 @@
+main:
+  - name: Welcome                                             
+    url: "#hero"
+  - name: Services
+    url: "#services"
+  - name: Contact
+    url: "#contact"
+    

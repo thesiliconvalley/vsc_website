@@ -1,0 +1,26 @@
+<!-- ======= Services Section ======= -->
+<section id="services" class="about">
+  <div class="container" data-aos="fade-up">    
+    <header class="section-header">
+      <h2>{{site.home.services.heading}}</h2>
+      <p>{{site.home.services.smallHeading}}</p>
+    </header>
+    {% for item in site.home.services.items %}
+        {% assign mod = forloop.index | modulo: 2 %}
+        <div class="row gx-0 my-4">
+            <div class="col-lg-6 d-flex flex-column justify-content-center {% if mod == 0 %}order-md-1  {% endif %}" data-aos="fade-up" data-aos-delay="200">
+                <div class="content">
+                    <h3>{{item.heading}}  {{}}</h3>
+                    <h2>{{item.subHeading}}</h2>
+                    <p>
+                        {{item.body}}
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                <img src="{{item.image}}" class="img-fluid" alt="">
+            </div>
+        </div>  
+    {% endfor %}
+  </div>
+</section><!-- End Services Section -->

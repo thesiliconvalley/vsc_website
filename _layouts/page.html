@@ -1,0 +1,26 @@
+{% include head.html %}
+<body>  
+  {% include header.html %}
+<main id="main" role="main"> 
+  
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <h2 class="mt-2">{{page.title}}</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+    
+    <section class="inner-page">
+      <div class="container">
+        {{ content }}
+      </div>
+    </section>
+
+</main> 
+
+{% include contactsection.html %}
+{% include footer.html %}
+{% include script.html %}
+</body>
+</html>

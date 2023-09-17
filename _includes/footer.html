@@ -1,0 +1,54 @@
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a class="logo d-flex align-items-center" href="{% if page.layout == 'default'  %}/{% endif %}{{ item.url }}/#hero">
+                {% if site.logo %}
+                <img src="{{site.logo}}" class="img-fluid" alt="Calnetic"> 
+                {% endif %} 
+                
+                <span>{{ site.title}}</span>
+            </a>             
+            <p>{{site.footer.about}}</p>
+
+            <div class="social-links mt-5">   
+                        {% for socials in site.social.items %}
+                         <a href="{{socials.link}}"><i class="{{socials.icon}}"></i></a>
+                        {% endfor %}
+
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+                {% for footer in site.footer.leftcol %}
+                 <li><i class="bi bi-chevron-right"></i> <a href="{{footer.link}}">{{footer.text}}</a></li>
+                {% endfor %}
+            </ul>
+          </div>
+          
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>{{site.footer.rightcol.heading}}</h4>
+            <p>{{site.footer.rightcol.text}}</p>
+            <a href="{{site.footer.rightcol.btnUrl}}"  class="btn btn-primary" >{{site.footer.rightcol.btnText}} </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>{{site.footer.copyright}}</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        Designed and Develop by <a href="https://github.com/webuimaker/">Webuimaker</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->

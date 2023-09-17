@@ -1,0 +1,108 @@
+title: VALLEY STARTUP CONSULTANT
+email: info@valleysc.in
+logo: "/assets/img/logo.png"
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://arvindrajpurohit.github.io/vsc_website/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+address: "C-206, Ganesh Glory 11 Jagatpur Road, Sarkhej - Gandhinagar Highway, Gota,  Ahmedabad, Gujarat 382470"
+phone: "+91 9601412598"
+officetime: "Monday - Friday<br>9:00AM - 05:00PM"
+
+home:
+  services:
+    enabled: true
+    background: "#fff"
+    heading: "Our Service"
+    smallHeading: "A wide range of clients. and solutions."
+    items:
+    - heading: "Productively Time Tracking"
+      subHeading: "Track time and understand the exact cost of your everyday activities. Identify inefficiencies and improve your business processes based on accurate data."
+      image: "https://productively.io/assets/images/hero.svg"
+      body:
+    - heading: "IoT"
+      subHeading: "Gathering data from various IoT devices and solving different use cases and real-time tracking, condition monitoring and live location data."
+      image: "assets/img/iot.jpg"
+      body:
+    - heading: "Automation Testing"
+      subHeading: "Efficiently validate code functionality, find bugs, and enhance software quality through automated test scripts."
+      image: "assets/img/automation.png"
+      body:
+  contact:
+    enabled:
+    background: "#FAFBFD"
+    image: "assets/images/book.png"
+    heading: "<span>Book a</span> Discovery Call"
+    smallHeading: ""
+    description: >
+     All successful businesses in every industry are continually investing in improving their business processes and implementing software to stay current and get ahead of their competition.<br>
+     
+     Are you thinking of implementing a software into your business, or are you in the middle of a software project? Thinking of documenting or improving your business processes?<br>
+
+     If either of those questions apply to you, book a 30 minute strategy call, and let's discuss how I can help. We will go over your current business and I will walk you through my methodology and how it can help you achieve your goals no matter where you are in the digital transformation journey.
+
+    btnText: "yes, i want to <strong>work</strong> with <strong>neil</strong>"
+    btnUrl: "#"
+
+
+
+
+footer:
+  copyright: 2022 VALLEY STARTUP CONSULTANT
+  about: 
+  leftcol:
+  - link: "/"
+    text: Home
+  - link: "#services"
+    text: Services
+  - link: "#contact"
+    text: Contact
+  - link: "/privacy-policy"
+    text: Privacy policy
+  rightcol:
+    heading: "We're Hiring I!"
+    text: "We're more interested in you. let's grow together"
+    btnText: Register
+    btnUrl: "#contact"
+
+
+social:
+  items:
+  - icon: "bi bi-linkedin"
+    title: "linkedin"
+    link: "https://www.linkedin.com/company/valley-startup-consultants-private-limited/"
+
+
+
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
