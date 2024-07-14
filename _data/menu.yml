@@ -3,8 +3,10 @@ main:
     url: "#hero"
   - name: Services
     url: "#services"
-  - name: Achievement
-    url: "#achievement"
-  - name: Contact
-    url: "#contact"
+  - name: Clients
+    url: "#clients"
+  - name: Testimonials                                             
+    url: "#testimonials"
+  - name: Blog
+    url: "#blog"
     

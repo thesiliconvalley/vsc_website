@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="container-inner">
+<div id="carouselExampleCaptions" class="carousel  carousel-testimonials carousel-fade" data-bs-ride="carousel">
+    <!-- <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div> -->
+    <div class="carousel-inner">
+        {% for item in site.data.testimonials %}
+            {% if forloop.first %}
+              {% assign carousel-class="carousel-item active" %}
+            {% else %}
+              {% assign carousel-class="carousel-item" %}
+            {% endif %}
+      <div class="{{ carousel-class }}">
+        <div class="item-inner d-flex">
+            <div class="card flex-fill">
+                <div class="slide-count paragraph-5--medium paragraph-5-sm--medium {{ include.count-class }}" data-interval="1000"></div>
+                <div class="card-head">
+                    <div class="card-image">
+                        <img src="/assets//img/{{item.authorImg}}" alt="{{item.authorName}}">                      
+                    </div>
+                </div>
+                <div class="card-body fy-p-0 d-flex">
+                    <div class="company-details d-block w-100">
+                        <div class="company-text d-flex align-items-center">
+                            <p class="paragraph-5--regular--v1 paragraph-5-sm--regular--v1 fy-m-0">{{ item.company }}</p>
+                        </div>
+                    </div>
+                    <div class="client-testimonial d-flex align-items-center">
+                        <img  class="quote-img" src="/assets/img/quote.svg" alt="quote-img" />
+                        <p class="paragraph-2--regular paragraph-2-sm--regular quote fy-m-0">{{ item.feedback }}</p>
+                    </div>
+                </div>
+
+                <div class="card-footer fy-p-0">
+                    <div class="client-details">
+                      <p class="client-name paragraph-2--medium paragraph-2-sm--medium fy-m-0 client-name">{{ item.authorName }}</p>
+                      <p class="profession paragraph-4--regular--v1 paragraph-4-sm--regular--v1 fy-paragraph-mt-v3 fy-mb-0">{{ item.authorPosition }}</p>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper {{ include.btn-class }}">
+                    <div class="carousel-control-prev" href="#carousel" role="button" data-slide="prev"></div>
+                    <div class="carousel-control-next" href="#carousel" role="button" data-slide="next"></div>
+                  </div>
+            </div>
+        </div>
+        
+     
+      </div>
+      {% endfor %}
+ 
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  </div>
+  </div>

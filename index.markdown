@@ -9,5 +9,99 @@ hero:
   subHeading: "We have expertise in <strong>IoT</strong> and <strong>EdTech</strong>"
   text: "You are an individual with an idea in mind or a big company with a PRD to develop, Our software development and engineering expertise can help you deliver it efficiently"
   image: "assets/img/banner.jpg"
+
 ---
+{% include sections/sections.html
+      clients=true
+      heading-top=true
+      heading="Delivering Automation Testing Services for Assured Quality and ROI"
+      description="While automation testing offers numerous benefits, achieving it can be challenging. It requires selecting the right tools, building automation test suites, and having a team of scripting experts to tackle various obstacles. Alternatively, you can simplify this process by partnering with VSC."
+      heading-cta=flase
+      headingCTA-type = ""
+      cta-url="linkdddd"
+      alt-text="testing"
+      img-url="rio.svg"
+      backup-img=""
+      class="blue-gradient heading client-section"
+      Type="testing"
+    %}
+    
+{% include sections/sections.html
+      clients=false
+      heading-top=true
+      heading="Streamlining Your Cloud Infrastructure (DevOps)"
+      description="In today's global arena, secure & scalable platforms are mission-critical. Platform engineers design, build, and manage resilient infrastructure & tools for your software applications. We deliver enhanced security, fault tolerance, and elastic scalability, perfectly aligned with your business objectives."
+      heading-top=false
+      alt-text="devops"
+      img-url="devops.svg"
+      backup-img=""
+      class="heading bg-right-blue"
+      Type="devops"
+    %}
+
+{% include sections/sections.html
+      clients=false
+      heading-top=true
+      heading="Software Engineering as a Service (SEaaS)"
+      description="At [Your Company Name], we offer Software Engineering as a Service (SEaaS), providing you with on-demand access to top-tier software engineering expertise. Whether you need help with developing a new product, scaling your existing applications, or tackling complex technical challenges, our team of experienced engineers is here to assist."
+      heading-cta=flase
+      headingCTA-type = ""
+      cta-url="linkdddd"
+      alt-text="testing"
+      img-url="seass.svg"
+      backup-img=""
+      class="red-blue-gradient heading bg-left-blue list-no-box"
+      Type="seass"
+    %}
+
+{% include sections/sections.html
+      clients=false
+      heading-top=true
+      heading="More than 7,00 Clients <br> trust VSC in the world"
+      description=""
+      heading-cta=flase
+      headingCTA-type = ""
+      cta-url=""
+      alt-text="testing"
+      img-url="map.svg"
+      backup-img=""
+      class="testimonials"
+      section-id ="testimonials"
+      Type="testimonials"
+    %}
+    
+{% include sections/sections.html
+      clients=false
+      heading-top=true
+      heading="Blog"
+      description="Browse articles"
+      heading-cta=true
+      headingCTA-type = "button"
+      cta-url=""
+      alt-text=""
+      img-url=""
+      backup-img=""
+      class="red-blue-gradient heading bg-left-blue blog"
+      section-id ="blog"
+      Type="blog"
+    %}
+
+    
+{% include sections/sections.html
+      clients=false
+      heading-top=true
+      heading="Contact Us"
+      description="Have an inquiry? We’ll be happy to assist you"
+      heading-cta=true
+      headingCTA-type = "button"
+      cta-url=""
+      alt-text=""
+      img-url=""
+      backup-img=""
+      class=" contact"
+      section-id ="contact"
+      Type="contact"
+    %}
+    
+
 

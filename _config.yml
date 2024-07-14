@@ -11,7 +11,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 address: "C-206, Ganesh Glory 11 Jagatpur Road, Sarkhej - Gandhinagar Highway, Gota,  Ahmedabad, Gujarat 382470"
-phone: "+91 9601412598<br>+91 9601412598"
+phone: "+91 9601412598"
 officetime: "Monday - Friday<br>9:00AM - 05:00PM"
 
 home:
@@ -21,11 +21,6 @@ home:
     heading: "Our Service"
     smallHeading: "A wide range of clients. and solutions."
     items:
-    - heading: "Future App"
-      subHeading: "We connect schools with parents via FutureApp for making a contribution to student's careers."
-      image: "assets/img/featureapp.png"
-      body: > 
-        FutureApp allows parents to stay updated about their kids progress. At the same time, it helps school management to make routine work automated and easy. We provides IOT enabled transport system as well.
     - heading: "Productively Time Tracking"
       subHeading: "Track time and understand the exact cost of your everyday activities. Identify inefficiencies and improve your business processes based on accurate data."
       image: "https://productively.io/assets/images/hero.svg"
@@ -33,6 +28,10 @@ home:
     - heading: "IoT"
       subHeading: "Gathering data from various IoT devices and solving different use cases and real-time tracking, condition monitoring and live location data."
       image: "assets/img/iot.jpg"
+      body:
+    - heading: "Automation Testing"
+      subHeading: "Efficiently validate code functionality, find bugs, and enhance software quality through automated test scripts."
+      image: "assets/img/automation.png"
       body:
   contact:
     enabled:

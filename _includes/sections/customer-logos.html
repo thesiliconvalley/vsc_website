@@ -1,0 +1,18 @@
+<section class="customer-logos-v2 {{ include.logo-class }} {{ include.logo-display-class }}">
+  <div class="container">
+    <div class="logo-section">
+      <div class="row">
+        <div class="col col-12 mw-100">
+          {% if include.heading %}
+          <h2 class="text-center heading">{{ include.heading }}</h2>
+          {% endif %}
+          <div class="img-fix mw-100">
+            {% for option in include.logos %}
+            <img src="assets/img/{{option}}" alt="{{option}}" />
+            {% endfor %}
+          </div>            
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

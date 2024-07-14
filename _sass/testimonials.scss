@@ -1,0 +1,242 @@
+.carousel-testimonials {
+    position: relative;
+    .carousel-inner {
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+
+      .carousel-item {
+        overflow: visible;
+        padding-top: 30px;
+        .card {
+          padding: 10px 20px 50px;
+          border: none;
+          position: relative;
+          background: color(zircon);
+          height: 100%;
+          .slide-count {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 25px;
+            z-index: 3;
+          }
+
+          .card-head {
+            .company-details {
+              .card-image {
+                margin-right: 20px;
+                position: relative;
+                z-index: 2;
+                top: -40px;
+                img {
+                  z-index: 10;
+                  width: 90px;
+                  height: 90px;
+                  object-fit: cover;
+                  object-position: top;
+                }
+              }
+              .company-text {
+                img {
+                  width: auto;
+                  height: 30px;
+                  margin-bottom: 2px;
+                }
+              }
+            }
+          }
+          .card-body {
+            margin-top: -20px;
+            margin-bottom: 20px;
+          }
+          .card-footer {
+            background: transparent;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  #testimonials {
+    padding: 70px 0px;
+  
+    .container {
+      .container-inner {
+        #carouselExampleCaptions {
+          position: relative;
+          .carousel-inner {
+            overflow: visible;
+  
+            .carousel-item {
+              margin: 0px 50px;
+  
+              .item-inner {
+                .card {
+                  max-width: 1000px;
+                  min-height: 490px;
+                  margin: 0 auto;
+                  position: relative;
+                  padding: 0;
+                  border: none;
+                  padding: 77px 70px 77px 210px;
+                  background: #f6faff;
+  
+                  .card-head {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -140px;
+                    @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+                      left: -60px;
+                    }
+  
+                    .client-image {
+                      width: 281px;
+                      height: 335px;
+                      object-fit: cover;
+                      object-position: center;
+                      @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+                        width: 230px;
+                      }
+                    }
+                  }
+  
+                  .slide-count {
+                    position: absolute;
+                    bottom: 12px;
+                    right: 140px;
+                  }
+  
+                  .card-body {
+                    position: relative;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 10px;
+  
+                    .company-details {
+                      .company-text {
+                        flex-wrap: wrap;
+                        position: relative;
+                        /* no. of employees */
+                        p{
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 18px;
+                            /* identical to box height, or 112% */
+                            letter-spacing: 0.4px;
+
+                            /* Header */
+                            color: $dark
+                        }
+
+
+  
+                        .company-logo {
+                          height: 60px;
+                          width: auto;
+                          object-fit: cover;
+                          object-position: center;
+                        }
+  
+                        .divider {
+                          margin: 0px 10px;
+                          width: 2px;
+                          height: 22px;
+                        }
+                      }
+                    }
+  
+                    .client-testimonial {
+                      height: 100%;
+                      position: relative;
+                      .quote-img {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                      }
+                      .quote {
+                        z-index: 2;
+                            font-style: normal;                           
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 30px;                
+                            /* Header */
+                            color: $dark
+                                        
+                      }
+                    }
+                  }
+  
+                  .card-footer {
+                    background: transparent;
+                    border: none;
+                    margin-bottom: -6px;
+                    .client-name{
+                        font-size: 16px !important;
+                        font-weight: 400 !important;
+                        line-height: 1.5 !important;
+                        letter-spacing: .4px !important;
+                        color: $dark;
+                        margin-bottom: 0px;
+                    }
+                    .profession {
+                        font-size: 16px !important;
+                        font-weight: 400 !important;
+                        line-height: 1.5 !important;
+                        letter-spacing: .4px !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+        .container-inner {
+          padding: 0 30px;
+          .carousel-item{
+            margin: 0 15px !important;
+          }
+        }
+      }
+    }
+  
+  }
+
+  
+.btn-wrapper {
+    position: absolute;
+    z-index: 10;
+    bottom: 50px;
+    right: 0px;
+    width: 100px;
+  
+    .carousel-control-prev {
+      width: 50px;
+      height: 50px;
+      z-index: 10;
+      opacity: 1;
+      left: 0;
+      transition: .5s ease-in-out;
+      background: url(/assets/img/left.svg) no-repeat;
+      &:hover {
+        background: url(/assets/img/left-hover.svg) no-repeat
+      }
+    }
+    .carousel-control-next {
+      width: 50px;
+      height: 50px;
+      z-index: 10;
+      opacity: 1;
+      right: 0;
+      transition: .5s ease-in-out;
+      background: url(/assets/img/right.svg) no-repeat;
+      &:hover {
+        background: url(/assets/img/right-hover.svg) no-repeat;
+      }
+    }
+  }

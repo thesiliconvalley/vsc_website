@@ -1,0 +1,24 @@
+<div class="fy-pt-sm-10 fy-p-0 last-blue-tick-list {{ include.tick-wrapper-class }}">
+  <div class="d-flex bullet-points mw-100 fy-paragraph-mb justify-content-center justify-content-md-start">
+    <div class="bullet">
+      <img src="/assets/img/tick.svg" alt="tick">
+    </div>
+    <p class="mw-100 text-left {{ include.class}} gradient-list fy-mb-0">{{ include.section1-heading }}</p>
+  </div>
+  {% if include.section2-heading %}
+  <div class="d-flex bullet-points mw-100 fy-paragraph-mb justify-content-center justify-content-md-start">
+    <div class="bullet">
+      <img src="/assets/img/tick.svg" alt="tick">
+    </div>
+    <p class="mw-100 text-left {{ include.class}} gradient-list fy-mb-0">{{ include.section2-heading }}</p>
+  </div>
+  {% endif %}
+  {% if include.section3-heading %}
+  <div class="d-flex bullet-points mw-100 justify-content-center justify-content-md-start">
+    <div class="bullet">
+      <img src="/assets/img/tick.svg" alt="tick">
+    </div>
+    <p class="mw-100 text-left {{ include.class}} gradient-list fy-mb-0">{{ include.section3-heading }}</p>
+  </div>
+  {% endif %}
+</div>

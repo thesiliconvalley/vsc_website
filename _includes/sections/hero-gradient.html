@@ -1,0 +1,78 @@
+<section id="hero"
+    class="gradient-background {% if include.background-linear-color %} {{ include.background-linear-color }} {% endif %} {{ include.hero-class }}">
+    {% if include.show-background-triangle %}
+    <div class="background-triangle {{ include.banner-triangle }}">
+        <div class="triangle d-none d-md-block"></div>
+    </div>
+    {% endif %}
+    {% if include.show-background-ovel %}
+    <div class="background-ovel d-none d-md-block {{ include.banner-triangle }}"> </div>
+    {% endif %}
+    <div class="container {{ include.container-class }}">
+        <div class="row justify-content-between two-column-row w-100 {{ include.two-col-row-class }}">
+            {% if include.left-col-width %}
+            {% assign left-col-width = include.left-col-width %}
+            {% else %}
+            {% assign left-col-width = "col-md-6 col-lg-7"%}
+            {% endif %}
+            <div
+                class="col col-12 {{ left-col-width }} align-items-center align-items-md-start text-md-left {{ include.left-col-class }}">
+                <h1
+                    class="mw-100 heading-primary--medium heading-primary-sm text-md-left {{ include.h1-class }}">
+                    {{ include.h1 }}</h1>
+                    {% if include.h2 %}
+                        <h2 class="text-md-left {{ include.h2-class }}"> {{ include.h2 }} </h2>
+                    {% endif %}
+                
+                <p
+                    class="mw-100 paragraph-2--regular--bright paragraph-2-sm--regular--bright {{ include.span-class }} {% if include.mobile-bottom %} {{ include.mobile-bottom }} {% endif %} {% if include.margin-bottom-mobile %}{{ include.margin-bottom-mobile }} {% endif %}">
+                    {{ include.span }}
+                </p>
+                {% if include.hero-class contains "blue-tick-list" %}
+                    {% include partials/blue-tick-list.html
+                        section1-heading=include.heading1
+                        section2-heading=include.heading2
+                        section3-heading=include.heading3
+                        class=include.list-class
+                        tick-wrapper-class=include.tick-wrapper-class
+                    %}
+                {% endif %}
+                {% if include.cta %}
+                    {% if include.cta-custom-demo-text %}
+                    <a class="btn btn-lg btn-outline-primary contact-us-demo-form paragraph-4--medium mt-4" href="#Contact" role="button">
+                        {{ include.cta-custom-demo-text}}
+                    </a>
+                    
+                {% else %}
+                <a class="btn btn-lg btn-outline-primary contact-us-demo-form paragraph-4--medium" href="#Contact" role="button">
+                    Contact Us
+                  </a>
+                {% endif %}
+                {% endif %}
+
+            </div>
+            {% if include.img-col-class %}
+            {% assign img-col-class = include.img-col-class %}
+            {% else %}
+            {% assign img-col-class="col-md-6 col-lg-5"%}
+            {% endif %}
+            {% if include.imgkit-url-with-mob %}
+            <div class="col col-12 {{ img-col-class }} d-block d-md-none">
+                {% include partials/img-lazy.html alt-text=include.alt-text img=include.imgkit-url-mob %}
+            </div>
+            {% else %}
+            <div
+                class="col col-12 {{ img-col-class }} gradient-hero-img-col text-center d-none d-md-block {% if include.imagee-class %}{{ include.imagee-class }}{% endif %}">
+                <img src="{{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-1" class="{{ include.class }}"
+                    alt="{{ img-alt }}" srcset="{{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-1 1x,
+      {{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-2 2x,
+      {{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-3 3x" width="{{ img-width }}" height="{{ include.height }}"
+                    onerror="handleError(this, '{{include.backup}}');this.onerror=null;">
+            </div>
+            {% endif %}
+
+        </div>
+       
+    </div>
+
+</section>

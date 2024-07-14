@@ -1,0 +1,195 @@
+<section class="section justify-content-end justify-content-lg-center {{include.class}} {{ include.last-row }}"  id="{{ include.section-id }}">
+    <div class='{% if include.Type contains "contact" %} container-fluid {% else %}  container {% endif %}'>
+    <!-------------------------Service Testing--------------------------------------------->
+    {% if include.Type contains "testing" %}
+    {% if include.clients %}
+    {% include sections/customer-logos.html
+            heading="Loved by leading finance teams across 20 countries"
+            logo-class="gradient-hero-logo fy-p-0"
+            logo-display-class=include.logo-class
+            colored-logos=include.colored-logos
+            logos="client.svg"
+            %}
+    {% endif %}
+        {% if include.heading-top %}
+        <div class="row">
+            <div class="col col-md-10 heading text-center mx-auto">
+                <h2>{{ include.heading }}</h2>
+                <p class="text-center">{{ include.description }}</p>
+                {% if include.heading-cta %}
+                    {% if include.headingCTA-type contains "button" %}
+                        <a class="btn btn-lg btn-outline-primary contact-us-demo-form paragraph-4--medium mt-4" href="#Contact"
+                            role="button">
+                            Read More
+                        </a>
+                    {% else %}
+                        <a href="#" class="link">Read More ></a>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="row">
+            <div class="col col-md-4  left-col mt-5">
+                <ul class="list-box">
+                    <li>
+                        <h4>Leading E-commerce Platform</h4>
+                        <p>Implemented a robust automation testing framework using Selenium and Appium for web and
+                            mobile applications.</p>
+                    </li>
+                    <li>
+                        <h4>Financial Services Application</h4>
+                        <p>Utilized a combination of Test Complete and JMeter to automate functional and performance
+                            testing.</p>
+                    </li>
+                    <li>
+                        <h4>Healthcare Management System</h4>
+                        <p>Employed a hybrid automation framework combining Selenium for UI testing and Postman for API
+                            testing.</p>
+                    </li>
+                </ul>
+                <a href="#" class="link">Read More ></a>
+            </div>
+
+            <div class="col col-md-6 offset-md-2 left-col">
+                {% if include.Type %}
+
+                <img src="/assets/img/{{ include.img-url }}" alt="{{ include.img-url }}">
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-------------------------Service devops--------------------------------------------->
+        {% if include.Type contains "devops" %}
+        <div class="row">
+            <div class="col col-md-6  left-col">
+                {% if include.Type %}
+                <img src="/assets/img/{{ include.img-url }}" alt="{{ include.img-url }}">
+                {% endif %}
+            </div>
+            <div class="col col-md-5 offset-md-1  left-col mt-5 d-flex justify-content-center flex-column">
+                <h2>{{ include.heading }}</h2>
+                <p>{{ include.description }}</p>
+
+                <a href="#" class="link">Read More ></a>
+            </div>
+
+
+        </div>
+        {% endif %}
+        <!-------------------------Service SEASS--------------------------------------------->
+        {% if include.Type contains "seass" %}
+        {% if include.heading-top %}
+        <div class="row">
+            <div class="col col-md-10 heading text-center mx-auto">
+                <h2>{{ include.heading }}</h2>
+                <p class="text-center">{{ include.description }}</p>
+                {% if include.heading-cta %}
+                    {% if include.headingCTA-type contains "button" %}
+                        <a class="btn btn-lg btn-outline-primary contact-us-demo-form paragraph-4--medium mt-4" href="#Contact"
+                            role="button">
+                            Read More
+                        </a>
+                    {% else %}
+                        <a href="#" class="link">Read More ></a>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        <div class="row">
+            <div class="col col-md-4  left-col mt-5">
+                <ul class="list-box">
+                    <li>
+                        <h4>Flexible Engagements</h4>
+                        <p>Tailor our services to your specific needs, whether it's a short-term project or long-term
+                            partnership.</p>
+                    </li>
+                    <li>
+                        <h4>Cost-Effective</h4>
+                        <p>Avoid the overhead costs of hiring full-time staff. Pay only for the services you need.</p>
+                    </li>
+                    <li>
+                        <h4>Expertise on Demand</h4>
+                        <p>Access a diverse pool of skilled engineers with expertise in various technologies and
+                            industries.</p>
+                    </li>
+
+                    <li>
+                        <h4>Accelerated Time-to-Market</h4>
+                        <p>Quickly scale your development efforts to meet deadlines and bring your products to market
+                            faster.</p>
+                    </li>
+                </ul>
+                <a href="#" class="link">Read More ></a>
+            </div>
+
+            <div class="col col-md-6 left-col">
+                {% if include.Type %}
+
+                <img src="/assets/img/{{ include.img-url }}" alt="{{ include.img-url }}">
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+         <!-------------------------Service TEStimonials--------------------------------------------->
+         {% if include.Type contains "testimonials" %}
+         {% if include.heading-top %}
+         <div class="row">
+             <div class="col col-md-5 heading text-center mx-auto align-items-center d-flex">
+                 <h2>{{ include.heading }}</h2>
+                 <p class="text-center">{{ include.description }}</p>             
+             </div>
+             
+             <div class="col col-md-7 heading text-center mx-auto">
+                <img src="/assets/img/{{ include.img-url }}" alt="{{ include.img-url }}">       
+            </div>
+         </div>
+         {% endif %}
+         <div class="row">
+            {% include sections/testimonials.html
+                section-class="fy-pb-0 fy-pt-0"
+                mob-section-class="fy-pb-sm-0 fy-pt-sm-0"
+              %}
+ 
+         </div>
+         {% endif %}
+
+         <!-------------------------Service TEStimonials--------------------------------------------->
+         {% if include.Type contains "blog" %}
+         {% if include.heading-top %}
+         <div class="row">
+             <div class="col col-md-5 heading">
+                 <h2>{{ include.heading }}</h2>                     
+                <p class="">{{ include.description }}</p>         
+             </div>
+             
+             <div class="col col-md-7 heading text-end ms-auto">
+                <a href="/blog" class="btn-outline-primary">VIEW ALL</a>
+            </div>
+         </div>
+         {% endif %}
+
+         {% include sections/blog.html  section-class="blog-cards"  %}
+
+         {% endif %}
+
+         
+         <!-------------------------Contact--------------------------------------------->
+         {% if include.Type contains "contact" %}         
+
+         {% include sections/contactsection.html  section-class="contact-section"  %}
+
+         {% endif %}
+
+
+
+
+
+
+
+    </div>
+</section>
