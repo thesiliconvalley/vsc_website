@@ -11,6 +11,12 @@
             logos="client.svg"
             %}
     {% endif %}
+    
+    {% if include.stats %}
+    {% include sections/stats.html
+            class="stats"
+            %}
+    {% endif %}
         {% if include.heading-top %}
         <div class="row">
             <div class="col col-md-10 heading text-center mx-auto">
@@ -49,7 +55,7 @@
                             testing.</p>
                     </li>
                 </ul>
-                <a href="#" class="link">Read More ></a>
+                <a href="/testing" class="link">Read More ></a>
             </div>
 
             <div class="col col-md-6 offset-md-2 left-col">

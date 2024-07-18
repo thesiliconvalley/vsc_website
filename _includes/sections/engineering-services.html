@@ -1,0 +1,19 @@
+<section class="{{ include.class }}">
+  <div class="container">
+      <div class="row">
+        {% for option in site.data.engineering-services %}   
+          <div class="col col-sm-3 col-md-4 ">
+            <div class="img-fix flex-column logo-section justify-content-center align-items-center">  
+              <div class="icon-container">     
+                <img src="/assets/img/{{option.icon}}" alt="{{option.icon}}" />
+              </div>
+              <div class="stats-content text-center">                
+                <h3>{{option.title}}</h3>    
+                <p>{{option.content}}</p> 
+              </div>
+            </div>            
+          </div>        
+        {% endfor %}
+      </div>
+  </div>
+</section>

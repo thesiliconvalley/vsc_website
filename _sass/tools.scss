@@ -1,0 +1,46 @@
+.tools-section{
+    padding: 80px 0px;
+
+background: linear-gradient(95.2deg, #F3F8FC 10.65%, #D7DEF6 88.46%, #FCEFF1 172.87%);
+
+mix-blend-mode: normal;
+position: relative;
+&::before{
+    background: url(/assets//img/tools-bg.svg) no-repeat;
+background-size: cover;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0px;
+top: 0px;
+
+}
+
+    ul{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        li{
+            padding: 0px;
+            margin: 0px;
+            width: 130px;
+            height: 130px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+            background: #FFFFFF;
+            box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 6;
+            flex-grow: 0;
+        }
+    }
+}

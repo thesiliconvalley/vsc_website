@@ -1,0 +1,111 @@
+.stories{
+    .heading{
+        padding-left: 20px;
+        gap: 5px;
+        border-left: 4px solid #F1BF11;
+        margin-bottom: 30px;
+        h3{
+           font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.4px;
+            color: $dark;
+        }
+        p{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.4px;
+            color: $primary;
+            margin-bottom: 0px;
+
+        }
+    }
+}
+.stories-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    li{
+        display: flex;
+        gap: 20px;
+        margin-bottom: 10px;
+        &:nth-child(2){
+            .title{
+                background: #F1BF11;
+            }
+            .content{
+                ul{
+                    li{
+                        &::before{                            
+                        content: url(/assets//img//tick-yellow.svg);
+                        background: #FFF9E6;
+                        }
+                    }
+                }
+            }
+        }
+
+        .title{
+            padding: 15px 15px;
+            background: #5C76C7;
+            border-radius: 4px 20px;
+            height: 50px;
+            color: $white;
+            margin-top: 8px;
+        }
+        .content{
+            p{                
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            /* or 171% */
+            letter-spacing: 0.4px;
+            color: $dark;
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            }
+
+            ul{
+                padding: 0px;
+                li{
+                    position: relative;
+                    padding-left: 40px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    /* or 171% */
+                    letter-spacing: 0.4px;
+                    color: $dark;
+                    /* Inside auto layout */
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                    margin-bottom: 10px;
+                    &::before{
+                        width: 24px;
+                        height: 24px;
+                        background: #CCDCF8;
+                        border-radius: 32px 32px 0px 32px;
+                        /* Inside auto layout */
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+                        content:url(/assets/img/tick.svg);
+                        position: absolute;
+                        left: 0px;
+                        padding: 3px;
+                        text-align: center;
+                        top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

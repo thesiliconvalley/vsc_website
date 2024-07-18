@@ -1,0 +1,19 @@
+<section class="{{ include.class }}">
+  <div class="container">
+      <div class="row">
+        {% for option in site.data.stats %}   
+          <div class="col">
+            <div class="img-fix logo-section">  
+              <div class="icon-container">     
+                <img src="/assets/img/{{option.icon}}" alt="{{option.icon}}" />
+              </div>
+              <div class="stats-content">                
+                <h3>{{option.number}}</h3>    
+                <p>{{option.text}}</p> 
+              </div>
+            </div>            
+          </div>        
+        {% endfor %}
+      </div>
+  </div>
+</section>

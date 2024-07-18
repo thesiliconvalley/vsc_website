@@ -1,0 +1,51 @@
+<div class="col-lg-6 contact-right {{include.class}}">
+    <header>{% if include.heading %}{{include.heading}} {% else %}Fill in your details {% endif %} </header>
+    {% if include.sub-heading %}
+    <p>{{include.sub-heading}}</p> 
+    {% endif %}
+  <form action="https://formspree.io/f/mdojazzo" method="post" class="php-email-form">
+    <div class="row mb-2">  
+      <div class="col">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+      </div>
+    </div>
+    <div class="row  mb-2">
+
+      <div class="col ">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+      </div>
+      </div>
+      <div class="row  mb-2">
+      <div class="col-md-12">
+        
+        <label for="email" class="form-label">Phone</label>
+        <input type="tel" id="phone" class="form-control" name="phone" placeholder="Phone Number" required>
+      </div>
+      </div>
+      <div class="row mb-2">
+      <div class="col-md-12">
+        
+        
+        <label for="email" class="form-label">message</label>
+        <textarea class="form-control" name="message" rows="3" id="message" placeholder="Message" required></textarea>
+      </div>
+      </div>
+
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      <input type="hidden" name="_next" value="/thanks" />
+      <div class="row gy-4">
+
+      <div class="col-md-12 text-center">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div>
+
+        <button type="submit" class="btn-outline-primary w-100">Send Message</button>
+      </div>
+      </div>
+
+  </form>
+
+</div>

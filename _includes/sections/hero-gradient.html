@@ -61,14 +61,31 @@
                 {% include partials/img-lazy.html alt-text=include.alt-text img=include.imgkit-url-mob %}
             </div>
             {% else %}
+            {% if include.imgkit-url != "" %}
             <div
                 class="col col-12 {{ img-col-class }} gradient-hero-img-col text-center d-none d-md-block {% if include.imagee-class %}{{ include.imagee-class }}{% endif %}">
                 <img src="{{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-1" class="{{ include.class }}"
                     alt="{{ img-alt }}" srcset="{{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-1 1x,
       {{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-2 2x,
       {{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-3 3x" width="{{ img-width }}" height="{{ include.height }}"
-                    onerror="handleError(this, '{{include.backup}}');this.onerror=null;">
+                    onerror="handleError(this, '{{include.backup}}');this.onerror=null;">            </div>
+
+            {% else %}
+            <div class="col col-12 {{ img-col-class }}">
+                
+                {% assign heading = include.form-heading %}
+                {% assign sub-heading = include.form-subheading %}
+
+                {% include sections/contact-form.html
+                section-class="hero"
+                mob-section-class="fy-pb-sm-0 fy-pt-sm-0"
+                heading=heading
+                sub-heading=sub-heading
+                %}
             </div>
+              {% endif %}
+
+
             {% endif %}
 
         </div>

@@ -49,7 +49,7 @@ section {
         font-size: 16px;
         color: $dark;
         max-width: 510px;
-        line-height: 24px;
+        line-height: 32px;
         margin-top: 1rem;
     }
 
@@ -101,6 +101,11 @@ section {
             }
         }
         
+        &.two-line{
+            strong{
+                color: #F1BF11;
+            }
+        }
 
        span{
         position: relative;
@@ -187,8 +192,7 @@ section {
 
 // customer-logo-v2.html
 section.customer-logos-v2 {
-    margin: -105px 0px 105px;
-    
+    margin: -105px 0px 105px;    
     position: relative;
     .img-fix{
         text-align: center;
@@ -232,5 +236,16 @@ section.customer-logos-v2 {
   
     &.light-bg-gradient-class {
       background-image: linear-gradient(to bottom, color(zircon), color(white));
+    }
+
+   
+  }
+
+  .devops{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .btn-outline-primary{
+        width: 80%;
     }
   }

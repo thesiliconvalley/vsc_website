@@ -4,13 +4,30 @@
 layout: default
 title: "VALLEY STARTUP CONSULTANT"
 description: "VALLEY STARTUP CONSULTANT"
-hero:
-  heading: "We transform business ideas into products."
-  subHeading: "We have expertise in <strong>IoT</strong> and <strong>EdTech</strong>"
-  text: "You are an individual with an idea in mind or a big company with a PRD to develop, Our software development and engineering expertise can help you deliver it efficiently"
-  image: "assets/img/banner.jpg"
-
 ---
+{% include sections/hero-gradient.html 
+  h1="We transform business <br>ideas into <span>products</span>."
+  h2="We have expertise in <span>IoT & EdTech</span>"
+  h2-class="bordered"
+  span="You are an individual with an idea in mind or a big company with a PRD to develop, Our software development and engineering expertise can help you deliver it efficiently"
+  cta=true
+  cta-custom-demo-text = "Talk With Us"
+  imgkit-url="/assets/img/hero-landing.svg"
+  alt-text="hero"
+  hero-class="gradient-hero-with-logos legal-services-hero blue-tick-list"
+  img-width=590
+  show-background-triangle=true
+  show-background-ovel=true  
+  container-class="hero-container"  
+  heading="Fyle empowers you to:"
+  section1="increase-finance-productivity"
+  heading1="50+ Successful Projects"
+  section2="automate-compliance"
+  heading2="AUTOMATE COMPLIANCE"
+  section3="stay-in-control"
+  heading3="STAY IN CONTROL"
+  show-background-triangle=true
+%}
 {% include sections/sections.html
       clients=true
       heading-top=true
@@ -18,7 +35,7 @@ hero:
       description="While automation testing offers numerous benefits, achieving it can be challenging. It requires selecting the right tools, building automation test suites, and having a team of scripting experts to tackle various obstacles. Alternatively, you can simplify this process by partnering with VSC."
       heading-cta=flase
       headingCTA-type = ""
-      cta-url="linkdddd"
+      cta-url="/testing/"
       alt-text="testing"
       img-url="rio.svg"
       backup-img=""
