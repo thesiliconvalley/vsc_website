@@ -169,6 +169,11 @@ description: "VALLEY STARTUP CONSULTANT"
           </ul>
       </div>
     </div>
+     {% include sections/story-testimonial.html
+      client=""
+      quote="These case studies illustrate the tangible benefits and impact of automation QA on different industries, showcasing the expertise and effectiveness of our automation testing services."
+      class="quote fw-bolder"      
+    %}  
 
 </div>
   </section>

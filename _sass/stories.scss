@@ -108,4 +108,50 @@
             }
         }
     }
+    &.two-col{
+        flex-wrap: wrap;
+        display: flex;
+        >li{
+            width: calc(50% - 30px);
+            padding-right: 30px;
+            flex-direction: column;
+            .title{
+                width: max-content;
+                min-width:190px
+            }
+            .content{
+                li{
+                    display: block;
+                    strong{
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+    &.single-list{
+        li{
+            display: block;
+        }      
+    }
+    &.double-list{
+        li{
+            display: block;
+        }
+        .content{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    width: 49%;
+                    margin-right: 1%;
+                }
+            }
+        }
+    }
+}
+.divider{
+    width: 2px;
+    height: 100%;
+    background: #D4DDF6;
 }

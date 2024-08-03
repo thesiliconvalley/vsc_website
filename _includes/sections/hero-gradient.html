@@ -67,8 +67,8 @@
                 <img src="{{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-1" class="{{ include.class }}"
                     alt="{{ img-alt }}" srcset="{{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-1 1x,
       {{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-2 2x,
-      {{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-3 3x" width="{{ img-width }}" height="{{ include.height }}"
-                    onerror="handleError(this, '{{include.backup}}');this.onerror=null;">            </div>
+      {{ include.imgkit-url }}?tr=w-{{ img-width }},dpr-3 3x" width="{{ img-width }}" height="{{ include.height }}">            
+    </div>
 
             {% else %}
             <div class="col col-12 {{ img-col-class }}">
@@ -89,6 +89,12 @@
             {% endif %}
 
         </div>
+
+        {% if include.stats %}
+    {% include sections/stats.html
+            class="stats"
+            %}
+    {% endif %}
        
     </div>
 

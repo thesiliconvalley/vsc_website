@@ -9,7 +9,7 @@ description: "VALLEY STARTUP CONSULTANT"
   h1="We transform business <br>ideas into <span>products</span>."
   h2="We have expertise in <span>IoT & EdTech</span>"
   h2-class="bordered"
-  span="You are an individual with an idea in mind or a big company with a PRD to develop, Our software development and engineering expertise can help you deliver it efficiently"
+  span="You are an individual with an idea in mind or a big company with a PRD to develop, our software development and engineering expertise can help you deliver it efficiently"
   cta=true
   cta-custom-demo-text = "Talk With Us"
   imgkit-url="/assets/img/hero-landing.svg"
@@ -41,6 +41,7 @@ description: "VALLEY STARTUP CONSULTANT"
       backup-img=""
       class="blue-gradient heading client-section"
       Type="testing"
+      section-id="services"
     %}
     
 {% include sections/sections.html
@@ -60,7 +61,7 @@ description: "VALLEY STARTUP CONSULTANT"
       clients=false
       heading-top=true
       heading="Software Engineering as a Service (SEaaS)"
-      description="At [Your Company Name], we offer Software Engineering as a Service (SEaaS), providing you with on-demand access to top-tier software engineering expertise. Whether you need help with developing a new product, scaling your existing applications, or tackling complex technical challenges, our team of experienced engineers is here to assist."
+      description="At VSC, we offer Software Engineering as a Service (SEaaS), providing you with on-demand access to top-tier software engineering expertise. Whether you need help with developing a new product, scaling your existing applications, or tackling complex technical challenges, our team of experienced engineers is here to assist."
       heading-cta=flase
       headingCTA-type = ""
       cta-url="linkdddd"
@@ -74,7 +75,7 @@ description: "VALLEY STARTUP CONSULTANT"
 {% include sections/sections.html
       clients=false
       heading-top=true
-      heading="More than 7,00 Clients <br> trust VSC in the world"
+      heading="More than 700 Clients <br> trust VSC in the world"
       description=""
       heading-cta=flase
       headingCTA-type = ""
@@ -85,6 +86,7 @@ description: "VALLEY STARTUP CONSULTANT"
       class="testimonials"
       section-id ="testimonials"
       Type="testimonials"
+      section-id="clients"
     %}
     
 {% include sections/sections.html

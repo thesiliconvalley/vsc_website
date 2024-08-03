@@ -8,6 +8,23 @@
         box-shadow: 0px 24px 36px rgba(114, 113, 113, 0.05), 0px 24px 36px rgba(0, 0, 0, 0.08);
         display: flex;
         gap: 30px;
+        &.quote{
+            position: relative;
+            overflow: hidden;
+            ::after{
+                background: url(/assets/img/quote-2.svg) no-repeat;
+                content: "";
+                right: 20px;
+                top: -5px;
+                position: absolute;
+                width: 124px;
+                height: 78px;
+            }
+            span{
+                color: #2E3E97;
+                font-style: italic;
+            }
+        }
         .icon-container{           
             width: 80px;
             height: 80px;
@@ -27,6 +44,8 @@
                 margin-bottom: 0px;
             }
         }
+
+      
 
       }
 
