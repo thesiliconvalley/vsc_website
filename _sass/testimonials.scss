@@ -4,7 +4,6 @@
       overflow: hidden;
       position: relative;
       z-index: 1;
-
       .carousel-item {
         overflow: visible;
         padding-top: 30px;
@@ -59,19 +58,61 @@
     }
   }
 
-  #testimonials {
-    padding: 70px 0px;
   
-    .container {
+.btn-wrapper {
+    position: absolute;
+    z-index: 10;
+    bottom: 50px;
+    right: 0px;
+    width: 100px;
+  
+    .carousel-control-prev {
+      width: 50px;
+      height: 50px;
+      z-index: 10;
+      opacity: 1;
+      left: 0;
+      transition: .5s ease-in-out;
+      background: url(/assets/img/left.svg) no-repeat;
+      &:hover {
+        background: url(/assets/img/left-hover.svg) no-repeat
+      }
+    }
+    .carousel-control-next {
+      width: 50px;
+      height: 50px;
+      z-index: 10;
+      opacity: 1;
+      right: 0;
+      transition: .5s ease-in-out;
+      background: url(/assets/img/right.svg) no-repeat;
+      &:hover {
+        background: url(/assets/img/right-hover.svg) no-repeat;
+      }
+    }
+  }
+
+  
+  #testimonials {
+    padding: 70px 0px; 
+    // .card {
+    //   max-width: 1000px;
+    //   min-height: 490px;
+    //   margin: 0 auto;
+    //   position: relative;
+    //   border: none;
+    //   padding: 77px 70px 77px 210px;
+    //   background: #f6faff;
+    // }
+
+    &.container {
       .container-inner {
         #carouselExampleCaptions {
           position: relative;
           .carousel-inner {
-            overflow: visible;
-  
+            overflow: visible;  
             .carousel-item {
-              margin: 0px 50px;
-  
+              margin: 0px 50px;  
               .item-inner {
                 .card {
                   max-width: 1000px;
@@ -82,16 +123,14 @@
                   border: none;
                   padding: 77px 70px 77px 210px;
                   background: #f6faff;
-  
-                  .card-head {
+                    .card-head {
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
                     left: -140px;
                     @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
                       left: -60px;
-                    }
-  
+                    }  
                     .client-image {
                       width: 281px;
                       height: 335px;
@@ -101,20 +140,17 @@
                         width: 230px;
                       }
                     }
-                  }
-  
+                  }  
                   .slide-count {
                     position: absolute;
                     bottom: 12px;
                     right: 140px;
-                  }
-  
+                  }  
                   .card-body {
                     position: relative;
                     flex-direction: column;
                     justify-content: center;
-                    gap: 10px;
-  
+                    gap: 10px;  
                     .company-details {
                       .company-text {
                         flex-wrap: wrap;
@@ -205,38 +241,4 @@
       }
     }
   
-  }
-
-  
-.btn-wrapper {
-    position: absolute;
-    z-index: 10;
-    bottom: 50px;
-    right: 0px;
-    width: 100px;
-  
-    .carousel-control-prev {
-      width: 50px;
-      height: 50px;
-      z-index: 10;
-      opacity: 1;
-      left: 0;
-      transition: .5s ease-in-out;
-      background: url(/assets/img/left.svg) no-repeat;
-      &:hover {
-        background: url(/assets/img/left-hover.svg) no-repeat
-      }
-    }
-    .carousel-control-next {
-      width: 50px;
-      height: 50px;
-      z-index: 10;
-      opacity: 1;
-      right: 0;
-      transition: .5s ease-in-out;
-      background: url(/assets/img/right.svg) no-repeat;
-      &:hover {
-        background: url(/assets/img/right-hover.svg) no-repeat;
-      }
-    }
   }
