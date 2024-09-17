@@ -223,24 +223,24 @@ background-color: #2d6bcf;}
 @media screen and (max-width:1023px) {
 h2{font-size:36px;}
 .mdlbgleft{display:none;}
-#hero h1, #hero h2{font-size:42px; line-height:42px;}
+
 }
 
 @media screen and (max-width: 767px) {
-h2{font-size:36px; font-weight:bold;}
-#hero{height:150vh;}
-.topbg{width:65px; z-index:1;}
-#hero h1, #hero h2{font-size:50px; line-height:55px; text-align:center;}
-#hero p{line-height:27px; text-align:center;}
-.mdlbgright{display:none;}
-.howsection{padding:30px 15px;}
-h2{line-height:1.3;}
-.section-gap{padding:30px 0;}
-.footer-right{display:none;}
-.contactsection .contact-title{max-width:100%;}
-.contact-title h3{font-size:22px; line-height:24px;}
-.footer-left{display:none;}
-.newitems{flex-direction:column; margin-bottom:30px;}
+  h2{font-size:36px; font-weight:bold;}
+  #hero{height:150vh;}
+  .topbg{width:65px; z-index:1;}
+ 
+  #hero p{line-height:27px; text-align:center;}
+  .mdlbgright{display:none;}
+  .howsection{padding:30px 15px;}
+  h2{line-height:1.3;}
+  .section-gap{padding:30px 0;}
+  .footer-right{display:none;}
+  .contactsection .contact-title{max-width:100%;}
+  .contact-title h3{font-size:22px; line-height:24px;}
+  .footer-left{display:none;}
+  .newitems{flex-direction:column; margin-bottom:30px;}
 .teamsection .icon-box{margin-bottom:45px;}
 .bluebox{padding:20px; width:96%;}
 .img-right{margin:0 0 0 20px;}
@@ -289,8 +289,6 @@ h2{line-height:1.3;}
 .navbar-nav{text-align:center;}
 }
 
-@media screen and (max-width:479px){
 
-}
 
 @import "oldstyle";

@@ -49,13 +49,13 @@ section {
         font-size: 16px;
         color: $dark;
         max-width: 510px;
-        line-height: 32px;
-        margin-top: 1rem;
+        line-height: 26px;
+        margin-top: 0.5rem;
     }
 
     h1{
         font-size: 40px;
-        line-height: 52px;
+        line-height: 50px;
         color: #FFFFFF;
         font-weight: 600;
         color: $dark;
@@ -71,7 +71,7 @@ section {
         font-weight: 400;
         display: inline-block;
         position: relative;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         &.bordered{
             &::before{
                 box-sizing: border-box;
@@ -169,7 +169,7 @@ section {
             padding-left: 10px;
         }
         .bullet-points{
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-weight: 700;
         }
     }
@@ -251,4 +251,38 @@ section.customer-logos-v2 {
   }
   .seaas-img{
     margin-top: -100px;
+  }
+  @media screen and (max-width:767px){
+    #hero{    
+        h1{
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;    
+        }
+        h2{
+            font-size: 26px;
+            line-height: 30px;
+            text-align: center;
+            width: 100%;
+            &::before, &::after{
+                display: none;
+            }
+            span{
+                line-height: inherit;
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+                display: block;
+                &::before, &::after{
+                    display: none;
+                }
+                
+            }
+        }
+        .hero-container {
+            padding-left: 30px;
+            text-align: center;
+        }
+    }
+
   }

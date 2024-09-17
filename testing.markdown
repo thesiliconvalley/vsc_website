@@ -6,7 +6,7 @@ title: "VALLEY STARTUP CONSULTANT"
 description: "VALLEY STARTUP CONSULTANT"
 ---
 {% include sections/hero-gradient.html 
-  h1="Delivering Automation <br>Testing  Services for <span>Assured <br> Quality and RO</span>"
+  h1="Delivering Automation <br>Testing  Services for <span>Assured <br> Quality and RO, Industry</span>"
   h2=false
   h2-class=""
   span="While automation testing offers numerous benefits, achieving it can be challenging. It requires selecting the right tools, building automation test suites, and having a team of scripting experts to tackle various obstacles. Alternatively, you can simplify this process by partnering with VSC. <br> <br>As an experienced automation testing company with a <strong>skilled team</strong>, we deliver test automation scripts that are <strong>free from flaky tests</strong> and ensure a <strong>zero defect spill rate</strong>. Here are some highlights from our decade-long journey."

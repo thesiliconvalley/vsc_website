@@ -11,7 +11,7 @@ description: "VALLEY STARTUP CONSULTANT"
   h2-class="bordered"
   span="At [Your Company Name], we offer Software Engineering as a Service (SEaaS), providing you with on-demand access to top-tier software engineering expertise. Whether you need help with developing a new product, scaling your existing applications, or tackling complex technical challenges, our team of experienced engineers is here to assist."
   cta=false
-  stats=true
+  stats=false
   cta-custom-demo-text = "Talk With Us"
   imgkit-url="/assets/img/sass.svg"
   alt-text="hero"
@@ -24,6 +24,7 @@ description: "VALLEY STARTUP CONSULTANT"
   show-background-triangle=true
 %}
 <section class="section justify-content-end justify-content-lg-center blue-gradient heading stats-section">
+{% include sections/stats.html  class="stats"   %}
   <div class="container">
   <div class="row">
       <div class="col-12 col-md-5">
@@ -112,7 +113,7 @@ description: "VALLEY STARTUP CONSULTANT"
       heading="Contact Us Today"
       text="Ready to take your software projects to the next level? Contact us today to learn more about our SEaaS offerings<br>  and how we can help you achieve your goals."
       btnText="Talk With Us"
-      btnUrl="#Contact"
+      btnUrl="/#Contact"
       class="cta"      
     %}
 
