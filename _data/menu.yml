@@ -3,6 +3,10 @@ main:
     url: "#hero"
   - name: Services
     url: "#services"
-  - name: Contact
-    url: "#contact"
+  - name: Clients
+    url: "#clients"
+  - name: Testimonials                                             
+    url: "#clients"
+  - name: Blog
+    url: "#blog"
     
