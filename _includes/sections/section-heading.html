@@ -1,0 +1,21 @@
+{% if include.stats %}
+    {% include sections/stats.html
+            class="stats"
+            %}
+    {% endif %}
+<div class="row">
+    <div class="col col-md-10 heading text-center mx-auto">
+        <h2>{{ include.heading }}</h2>
+        <p class="text-center">{{ include.description }}</p>
+        {% if include.heading-cta %}
+            {% if include.headingCTA-type contains "button" %}
+                <a class="btn btn-lg btn-outline-primary contact-us-demo-form paragraph-4--medium mt-4" href="#Contact"
+                    role="button">
+                    Read More
+                </a>
+            {% else %}
+                <a href="#" class="link">Read More ></a>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>
