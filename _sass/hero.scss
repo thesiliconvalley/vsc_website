@@ -1,0 +1,288 @@
+section {
+    &.gradient-background {
+        position: relative;
+        //   background-image: linear-gradient(118deg,#F7F0E3 1%,#EBF3FD 89%);
+        background-image: linear-gradient(-37.6deg, #F7F0E3 2.23%, #EBF3FD 42.59%);
+        // background: linear-gradient(37.6deg, #F7F0E3 -2.23%, #EBF3FD 42.59%);
+        // transform: matrix(-1, 0, 0, 1, 0, 0);
+        .background-triangle {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            left: 50%;
+            bottom: 0%;
+
+            .triangle {
+                width: 100%;
+                height: 100%;
+                -webkit-clip-path: polygon(114% 0, 0 100%, 100% 100%);
+                clip-path: polygon(114% 0, 0 100%, 100% 100%);
+                background-color: #f6f8fe;
+                mix-blend-mode: multiply;
+            }
+        }
+
+        .background-ovel {
+            position: absolute;
+            width: 667.54px;
+            height: 519.82px;
+            left: -222.14px;
+            top: -133.14px;
+            background: rgba(225, 234, 253, 0.8);
+            transform: rotate(130deg);
+            border-radius: 90%;
+        }
+
+
+    }
+}
+
+
+#hero {
+    padding-top: 150px;
+    width: 100%;
+    position: relative;
+    height: 100vh;    
+    overflow: hidden;
+
+    p {
+        font-size: 16px;
+        color: $dark;
+        max-width: 510px;
+        line-height: 26px;
+        margin-top: 0.5rem;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 50px;
+        color: #FFFFFF;
+        font-weight: 600;
+        color: $dark;
+
+        span{
+            color: $heading;
+        }
+    }
+    h2{        
+        font-size: 30px;
+        line-height: 60px;
+        color: $dark;
+        font-weight: 400;
+        display: inline-block;
+        position: relative;
+        margin-top: 0.5rem;
+        &.bordered{
+            &::before{
+                box-sizing: border-box;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                right: -8px;
+                top: -3px;
+                background: $white;
+                border: 4px solid $dark; 
+                content: "";
+                border-radius: 20px;  
+                z-index: 1;
+            }
+            
+            &::after{
+                box-sizing: border-box;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                right: -8px;
+                bottom: -3px;
+                background: $white;
+                border: 4px solid $dark; 
+                content: "";
+                border-radius: 20px;
+            }
+        }
+        
+        &.two-line{
+            strong{
+                color: #F1BF11;
+            }
+        }
+
+       span{
+        position: relative;
+        border: 4px solid $dark;        
+        line-height: 32px;
+        padding: 2px 10px;
+        font-weight: 700;
+        margin-left: 15px;
+        &::before{
+            box-sizing: border-box;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: -10px;
+            top: -10px;
+            background: $white;
+            border: 4px solid $dark; 
+            content: "";
+            border-radius: 20px;  
+        }
+        
+        &::after{
+            box-sizing: border-box;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: -10px;
+            bottom: -10px;
+            background: $white;
+            border: 4px solid $dark; 
+            content: "";
+            border-radius: 20px;
+        }
+       }
+
+        
+
+    }
+
+    &.innerhero {
+        height: 35vh;
+        margin-bottom: 5vh;
+    }
+
+    .hero-container {
+        position: relative;
+
+    }
+
+    .text-gradient {
+        font-feature-settings: 'salt'on, 'liga'off;
+        background: -webkit-linear-gradient(124.58deg, #3D65AF -71.92%, #2372B8 -32.03%, #00B8BB 57.79%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .last-blue-tick-list{
+        p{            
+            margin: 0px;
+            padding-left: 10px;
+        }
+        .bullet-points{
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+    }
+
+    .bullet{
+        width: 24px;
+        height: 24px;
+        background: #CCDCF8;
+        border-radius: 32px 32px 0px 32px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        text-align: center;
+    }
+   
+
+
+}
+
+
+// customer-logo-v2.html
+section.customer-logos-v2 {
+    margin: -105px 0px 105px;    
+    position: relative;
+    .img-fix{
+        text-align: center;
+    }
+  
+    .container {
+      .logo-section {
+        padding: 60px 25px;
+        border-radius: 5px;
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+        border-radius: 5px;
+        box-shadow: 0px 24px 36px rgba(114, 113, 113, 0.05), 0px 24px 36px rgba(0, 0, 0, 0.08);
+        .heading {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height */
+            text-align: center;
+            color: $dark;
+            margin-bottom: 2rem;
+        }
+      }
+    }
+  
+    &.light-bg-logo-class {
+      background-image: url(/assets/images/software-travel-expense-management/rectangle-bg.svg);
+      background-size: 100% 50%;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  
+    &.outlook-non-profit {
+      background-color: color(zircon);
+    }
+    
+    &.feature-logo-class {
+      background-color: color(zircon);
+      padding-bottom: 80px;
+    }
+  
+    &.light-bg-gradient-class {
+      background-image: linear-gradient(to bottom, color(zircon), color(white));
+    }
+
+   
+  }
+
+  .devops{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .btn-outline-primary{
+        width: 80%;
+    }
+  }
+  .seaas-img{
+    margin-top: -100px;
+  }
+  @media screen and (max-width:767px){
+    #hero{    
+        h1{
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;    
+        }
+        h2{
+            font-size: 26px;
+            line-height: 30px;
+            text-align: center;
+            width: 100%;
+            &::before, &::after{
+                display: none;
+            }
+            span{
+                line-height: inherit;
+                padding: 0px;
+                margin: 0px;
+                border: 0px;
+                display: block;
+                &::before, &::after{
+                    display: none;
+                }
+                
+            }
+        }
+        .hero-container {
+            padding-left: 30px;
+            text-align: center;
+        }
+    }
+
+  }

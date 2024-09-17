@@ -1,31 +1,42 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-$heading : #152C5B;
-$primary: #2D6BCF;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$heading : #F1BF11;
+$primary: #2E3E97;
 $secondary: #969696;
-$dark: #1B2E59;
+$dark: #2D3142;
 $dark2: #323232;
 $white: #fff;
 $black: #000;
 $yellow: #FDC412;
 
-$bodyFont           : 'Roboto', sans-serif;
-$headingFont        : 'Raleway', sans-serif;
+$bodyFont           : "Poppins", sans-serif;
+$headingFont        : "Poppins", sans-serif;
 $specialFont        : "";
 $codeFont           : "";
+
+$font14: "14px;";
+$font16: "16px;";
+$font20: "20px;";
+$font30: "30px;";
+$font40: "40px;";
+
 
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  /* font-family: 'Switzera ADF Regular'; */
-  font-family: 'Switzer', sans-serif;
-  color: #444444;
-  font-size:16px;
+  color: #6F718F;
+  font-size:14px;
+  font-family: $bodyFont;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
 }
 
 a {
@@ -40,10 +51,32 @@ a:hover {
 
 h2{
   /* font-family: 'Switzera ADF Bold Cond';  */
-  font-family: 'Switzer', sans-serif;
-  color:#000000; font-size:48px; line-height:75px;}
+  font-family: $bodyFont ;
+  color: #2D3142; font-size:28px; line-height:75px;}
 /* CSS Document */
 
 .section-gap{padding:80px 0;}
 .section-title{padding-bottom:30px; text-align:center;}
 .section-title span{color:#02b4bb;}
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #4154f1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $bodyFont;
+}

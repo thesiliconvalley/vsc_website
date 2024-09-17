@@ -1,0 +1,101 @@
+.stats{    
+    margin: -105px 0px 105px;   
+    .logo-section {
+        padding: 25px;
+        border-radius: 12px;
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+        box-shadow: 0px 24px 36px rgba(114, 113, 113, 0.05), 0px 24px 36px rgba(0, 0, 0, 0.08);
+        display: flex;
+        gap: 30px;
+        &.quote{
+            position: relative;
+            overflow: hidden;
+            ::after{
+                background: url(/assets/img/quote-2.svg) no-repeat;
+                content: "";
+                right: 20px;
+                top: -5px;
+                position: absolute;
+                width: 124px;
+                height: 78px;
+            }
+            span{
+                color: #2E3E97;
+                font-style: italic;
+            }
+        }
+        .icon-container{           
+            width: 80px;
+            height: 80px;
+            background: rgba(46,62,151,.2);
+            border-radius: 12px;
+            padding: 15px;
+        }
+        .stats-content{
+            h3{
+                color: $primary;
+                font-size: 32px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 16px;
+                color: $dark;
+                margin-bottom: 0px;
+            }
+        }
+
+      
+
+      }
+
+    
+}
+
+.engineering-services{
+    @extend .stats;
+    margin-top: 50px;
+    .logo-section{
+        margin-bottom: 30px;
+        gap: 40px;
+        height: 340px;
+        transition: all 0.5s ease;
+        .icon-container{ 
+            background: transparent;
+        }
+        .stats-content{
+            h3{               
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 27px;
+                text-align: center;
+                color: #000000;                
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+            }
+            p{               
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+                color: $dark2;
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+                display: none;
+            }
+        }
+
+        &:hover{
+            .stats-content{
+                h3{}
+                p{
+                    display: block;
+                }
+            }
+        }
+    }
+        
+}

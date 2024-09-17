@@ -1,0 +1,73 @@
+.blog{
+    .heading {
+        h2{
+            margin-bottom: 0px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            /* identical to box height, or 29px */
+            letter-spacing: 0.02em;
+            color: #1A2434;
+            opacity: 0.7;
+        }
+        p{            
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 120%;
+            color: $dark;
+        }
+    }
+
+    .blog-cards{
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 24px;
+            gap: 15px;
+            border: 1px solid #EBEFF6;
+            border-radius: 15px;
+            background: transparent;
+
+            .card-body{
+                display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 0px;
+                .card-text{              
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #1A2434;
+                }
+                .link{
+                    margin: 0px;
+                    /* Read more */
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 120%;
+                        /* or 19px */
+                        letter-spacing: 0.02em;
+
+                        color: $primary;
+
+                        opacity: 0.7;
+
+                        /* Inside auto layout */
+                        flex: none;
+                        order: 0;
+                        flex-grow: 0;
+
+                }
+            }
+
+        }
+    }
+    
+
+}
+    
