@@ -2,7 +2,7 @@
   <header id="header" class="header fixed-top header-scrolled">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a class="logo d-flex align-items-center" href="{% if page.layout != 'default'  %}/{% endif %}{{ item.url }}#hero">
+      <a class="logo d-flex align-items-center" href="{% if page.url != '/'  %}/{% endif %}{{ item.url }}#hero">
         {% if site.logo %}
         <img src="{{site.logo}}" class="img-fluid" alt="Calnetic"> 
         {% else %}
@@ -11,7 +11,6 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-
           {% for item in site.data.menu.main %}
           {% if item.child %}
             <li class="dropdown">
@@ -24,7 +23,7 @@
             </li>                
             {% else %}
               <li>
-                <a class="nav-link scrollto {% if item.url == page.url %} active {% endif %}" href="{% if page.layout != 'default'  %}/{% endif %}{{ item.url }}" aria-current="page">{{ item.name }}</a>
+                <a class="nav-link  {% if item.url == page.url %} active {% endif %}" href="{% if page.url != '/'  %}/{% endif %}{{ item.url }}" aria-current="page">{{ item.name }}</a>
               </li>  
           {% endif %}
           {% endfor %}

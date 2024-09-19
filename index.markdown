@@ -23,9 +23,9 @@ description: "VALLEY STARTUP CONSULTANT"
   section1="increase-finance-productivity"
   heading1="50+ Successful Projects"
   section2="automate-compliance"
-  heading2="AUTOMATE COMPLIANCE"
+  heading2="Automate Compliance"
   section3="stay-in-control"
-  heading3="STAY IN CONTROL"
+  heading3="Stay in Control"
   show-background-triangle=true
 %}
 {% include sections/sections.html
@@ -46,12 +46,12 @@ description: "VALLEY STARTUP CONSULTANT"
     
 {% include sections/sections.html
       clients=false
-      heading-top=true
       heading="Streamlining Your Cloud Infrastructure (DevOps)"
       description="In today's global arena, secure & scalable platforms are mission-critical. Platform engineers design, build, and manage resilient infrastructure & tools for your software applications. We deliver enhanced security, fault tolerance, and elastic scalability, perfectly aligned with your business objectives."
       heading-top=false
       alt-text="devops"
       img-url="devops.svg"
+      cta-url="/devops/"
       backup-img=""
       class="heading bg-right-blue"
       Type="devops"
@@ -59,11 +59,12 @@ description: "VALLEY STARTUP CONSULTANT"
 
 {% include sections/sections.html
       clients=false
-      heading-top=true
+       heading-top=true
       heading="Software Engineering as a Service (SEaaS)"
-      description="At VSC, we offer Software Engineering as a Service (SEaaS), providing you with on-demand access to top-tier software engineering expertise. Whether you need help with developing a new product, scaling your existing applications, or tackling complex technical challenges, our team of experienced engineers is here to assist."
+      description="At VSC, we offer Software Engineering as a Service (SEaaS), providing you with on-demand access to top-tier software engineering expertise. Whether you need help with developing a new product, scaling your existing applications, or tackling complex technical challenges, our team of experienced engineers is here to assist."     
       heading-cta=flase
       headingCTA-type = ""
+      cta-url="/seaas/"
       cta-url="linkdddd"
       alt-text="testing"
       img-url="seass.svg"
@@ -83,10 +84,25 @@ description: "VALLEY STARTUP CONSULTANT"
       alt-text="testing"
       img-url="map.svg"
       backup-img=""
+      class="clients"
+      Type="clients"
+      section-id ="clients"
+    %}
+
+{% include sections/sections.html
+      clients=false
+      heading-top=true
+      heading="More than 700 Clients <br> trust VSC in the world"
+      description=""
+      heading-cta=flase
+      headingCTA-type = ""
+      cta-url=""
+      alt-text="testing"
+      img-url="map.svg"
+      backup-img=""
       class="testimonials"
-      section-id ="testimonials"
       Type="testimonials"
-      section-id="clients"
+      section-id ="testimonials"
     %}
     
 {% include sections/sections.html
