@@ -5,7 +5,7 @@
   background: #f8f8f8;
 
   .contact-left {
-    padding: 80px 120px 80px 80px;
+    padding: 80px 60px 80px 50px;
     position: relative;
     background-color: #2E3E97;
 
@@ -37,7 +37,7 @@
 
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 38px;
         /* or 158% */
         display: flex;
@@ -51,7 +51,7 @@
 
     .info-box {
       color: $white;
-      padding: 30px;
+      padding: 30px 30px 30px 10px;
       display: flex;
       gap: 10px;
     }
@@ -124,19 +124,19 @@
       &::before{
         box-sizing: border-box;
         position: absolute;
-        width: 99px;
+        width: 10px;
         height: 38px;
-        right: -50px;
+        right: -5px;
         top: 0px;
         content: "";
         z-index: 1;
-        background: url(/assets/img/left-shape-contact.svg) no-repeat;
+        background: url(/assets/img/left-shape-contact.svg) top right no-repeat;
     }
     
     &::after{
       box-sizing: border-box;
       position: absolute;
-      width: 99px;
+      width: 10px;
       height: 38px;
       left: -5px;
       top: 0px;

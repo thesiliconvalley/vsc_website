@@ -62,14 +62,15 @@
   
 				  <div class="col ">
 					<label for="email" class="form-label">Email</label>
-					<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+					<input type="email" class="form-control" name="email" id="email" oninvalid="this.setCustomValidity('This is not a valid email address')" oninput="this.setCustomValidity('')" placeholder="Your Email" required>
 				  </div>
 				  </div>
 				  <div class="row gy-4 mb-3">
 				  <div class="col-md-12">
 					
 					<label for="email" class="form-label">Phone</label>
-					<input type="tel" id="phone" class="form-control" name="phone" placeholder="Phone Number" required>
+					<input type="tel" id="phone" class="form-control" name="phone" placeholder="Enter your phone number:"
+					pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="123-456-7890" required>
 				  </div>
 				  </div>
 				  <div class="row gy-4 mb-3">
@@ -82,7 +83,7 @@
 				  </div>
 
 				  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-				  <input type="hidden" name="_next" value="/thanks" />
+				  <input type="hidden" name="_next" value="https://valleysc.in/thanks" />
 				  <div class="row gy-4">
   
 				  <div class="col-md-12 text-center">

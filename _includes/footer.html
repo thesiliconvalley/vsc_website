@@ -6,13 +6,13 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-2 col-md-2 footer-info">
-            <a class="logo d-flex align-items-center" href="{% if page.layout == 'default'  %}/{% endif %}{{ item.url }}/#hero">
+            <a class="logo d-flex align-items-center" href="{% if page.layout == 'default'  %}/{% endif %}{{ item.url }}#hero">
                 {% if site.logo %}
-                <img src="{{site.logo}}" class="img-fluid" alt="Calnetic"> 
+                <img src="{{site.logo}}" class="img-fluid" alt="valleysc"> 
                 {% endif %} 
                 
             </a>             
-            <!-- <p>{{site.footer.about}}</p> -->
+            <p>{{site.footer.about}}</p>
 
            
           </div>
@@ -21,7 +21,7 @@
            
             <ul>
                 {% for footer in site.footer.leftcol %}
-                 <li><a href="{{footer.link}}">{{footer.text}}</a></li>
+                 <li><a href="{% if page.url != '/'  %}/{% endif %}{{ footer.link }}">{{footer.text}}</a></li>
                 {% endfor %}
             </ul>
           </div>
@@ -52,7 +52,7 @@
           </div>
           <div class="credits">
            
-            Designed and Develop by <a href="https://github.com/webuimaker/">Webuimaker</a>
+            Designed and Develop by <a href="http://webuimaker.com/">Webuimaker</a>
           </div>
         </div>
       </div>

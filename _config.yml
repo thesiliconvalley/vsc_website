@@ -56,13 +56,13 @@ footer:
   copyright: 2024 VALLEY STARTUP CONSULTANT
   about: 
   leftcol:
-  - link: "/"
+  - link: "#hero"
     text: Home
   - link: "#services"
     text: Services
   - link: "#contact"
     text: Contact
-  - link: "/privacy-policy"
+  - link: "privacy-policy"
     text: Privacy policy
   rightcol:
     heading: "We're Hiring I!"

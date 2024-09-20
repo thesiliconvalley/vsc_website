@@ -136,7 +136,7 @@ description: "VALLEY STARTUP CONSULTANT"
     %}   
     <div class="row">
       <div class="col-md-5 order-md-2 order-2">
-          <img src="/assets/img/healtcare.svg" alt="" class="ecommerce img-fluid">
+          <img src="/assets/img/health.jpeg" alt="" class="ecommerce img-fluid">
       </div>
       <div class="col-md-7 order-md-1 order-2">
           <ul class="stories-list">
@@ -186,7 +186,7 @@ description: "VALLEY STARTUP CONSULTANT"
 {% include sections/sections.html
       clients=false
       heading-top=true
-      heading="More than 7,00 Clients <br> trust VSC in the world"
+      heading="More than 700 Clients <br> trust VSC in the world"
       description=""
       heading-cta=flase
       headingCTA-type = ""
