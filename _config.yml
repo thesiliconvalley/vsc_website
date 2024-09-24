@@ -14,6 +14,10 @@ address: "C-206, Ganesh Glory 11 Jagatpur Road, Sarkhej - Gandhinagar Highway, G
 phone: "+91 9601412598"
 officetime: "Monday - Friday<br>9:00AM - 05:00PM"
 
+
+
+
+
 home:
   services:
     enabled: true
@@ -86,6 +90,14 @@ sass:
 # Build settings
 plugins:
   - jekyll-feed
+
+# Other
+kramdown:
+  input: GFM
+  hard_wrap: False
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: {span: {disable: true}}
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
