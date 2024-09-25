@@ -1,14 +1,15 @@
 ---
-title: Setup With Pritunl
+title: Node.js Event Loop Explained
 date: 2021-03-02 10:45:37 -05:00
 layout: post
 permalink: blog/a-practical-overview-of-how-nodejs-single-threaded/
 categories: Tutorial
-author: Himanshu Bansal
-coverImage: https://dz2cdn1.dzone.com/storage/temp/17548440-1709639778419.png
+author: Dinesh Agrawal 
+coverImage: https://dz2cdn1.dzone.com/storage/temp/16193208-1662525593978.png
 ---
 
 __This documentation provides a guide to setting up a Virtual Private Network (VPN) server using Pritunl, a popular open-source VPN server management platform.__
+
 
 I read many articles on how Node.js works internally, but I didn’t find any satisfactory answer, and hence I decided to write an article myself with practical examples so that people can actually run the snippet and play with it.
 

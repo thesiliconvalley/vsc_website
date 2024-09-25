@@ -1,11 +1,11 @@
 ---
-title: Node.js Event Loop Explained
+title: Setup With Pritunl
 date: 2021-03-02 10:45:37 -05:00
 layout: post
 permalink: blog/vpn-setup-with-pritunel/
 categories: Tutorial
-author: Dinesh Agrawal 
-coverImage: https://dz2cdn1.dzone.com/storage/temp/16193208-1662525593978.png
+author: Himanshu Bansal
+coverImage: https://dz2cdn1.dzone.com/storage/temp/17548440-1709639778419.png
 ---
 
 __This article covers the main components of Node.js with practical examples so that people can actually run the snippet and play with it__

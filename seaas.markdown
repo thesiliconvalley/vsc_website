@@ -9,7 +9,7 @@ description: "VALLEY STARTUP CONSULTANT"
   h1="Software Engineering as a <br>Service <span>(SEaaS)</span>."
   h2="Unlock Your Potential with <span>SEaaS</span>"
   h2-class="bordered"
-  span="At [Your Company Name], we offer Software Engineering as a Service (SEaaS), providing you with on-demand access to top-tier software engineering expertise. Whether you need help with developing a new product, scaling your existing applications, or tackling complex technical challenges, our team of experienced engineers is here to assist."
+  span="At SEaaS services, we offer Software Engineering as a Service (SEaaS), providing you with on-demand access to top-tier software engineering expertise. Whether you need help with developing a new product, scaling your existing applications, or tackling complex technical challenges, our team of experienced engineers is here to assist."
   cta=false
   stats=false
   cta-custom-demo-text = "Talk With Us"
@@ -152,7 +152,7 @@ description: "VALLEY STARTUP CONSULTANT"
               <li>
                   <div class="title">Solution</div>
                   <div class="content">
-                     <p>Our team at [Your Company Name] partnered with SmartHome Innovations to create an integrated IoT platform. We provided full-cycle development services, including hardware integration, software development, and mobile app design.</p>
+                     <p>Our team at SEaaS services partnered with SmartHome Innovations to create an integrated IoT platform. We provided full-cycle development services, including hardware integration, software development, and mobile app design.</p>
                   </div>              
               </li>                         
               <li>
@@ -182,7 +182,7 @@ description: "VALLEY STARTUP CONSULTANT"
     </div>
     {% include sections/story-testimonial.html
       client="CEO, SmartHome Innovations"
-      quote="The expertise of [Your Company Name] in IoT development was instrumental in bringing our vision to life. Our smart home system is now a market leader, thanks to their innovative solutions and commitment to quality."
+      quote="The expertise of SEaaS services in IoT development was instrumental in bringing our vision to life. Our smart home system is now a market leader, thanks to their innovative solutions and commitment to quality."
       class="quote"      
     %}
     {% include sections/stories.html
@@ -237,7 +237,7 @@ description: "VALLEY STARTUP CONSULTANT"
     </div>
     {% include sections/story-testimonial.html
       client="CEO, SmartHome Innovations"
-      quote="The expertise of [Your Company Name] in IoT development was instrumental in bringing our vision to life. Our smart  home system is now a market leader, thanks to their innovative solutions and commitment to quality."
+      quote="The expertise of SEaaS services in IoT development was instrumental in bringing our vision to life. Our smart  home system is now a market leader, thanks to their innovative solutions and commitment to quality."
       class="quote"      
     %}  
 
