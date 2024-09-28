@@ -6,11 +6,11 @@
           {% if include.heading %}
           <h2 class="text-center heading">{{ include.heading }}</h2>
           {% endif %}
-          <div class="img-fix mw-100">
-            {% for option in include.logos %}
-            <img src="assets/img/{{option}}" alt="{{option}}" />
-            {% endfor %}
-          </div>            
+            <div class="row row-cols-10 row-cols-sm-6 row-cols-md-9 gap-2 justify-content-center">
+              {% for option in site.data.technologies %}
+              <div class="col d-flex justify-content-center align-items-center mb-2 img-fix"><img src="assets/img/technologies/{{option.logo}}" alt="{{option.text}}" class="img-fluid" /></div>
+              {% endfor %}
+            </div>        
         </div>
       </div>
     </div>

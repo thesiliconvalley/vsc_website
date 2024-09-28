@@ -1,22 +1,10 @@
 <section class="section justify-content-end justify-content-lg-center {{include.class}} {{ include.last-row }}"  id="{{ include.section-id }}">
     <div class='{% if include.Type contains "contact" %} container-fluid {% else %}  container {% endif %}'>
     <!-------------------------Service Testing--------------------------------------------->
-    {% if include.Type contains "testing" %}
-    {% if include.clients %}
-    {% include sections/customer-logos.html
-            heading="Loved by leading finance teams across 20 countries"
-            logo-class="gradient-hero-logo fy-p-0"
-            logo-display-class=include.logo-class
-            colored-logos=include.colored-logos
-            logos="client.svg"
-            %}
-    {% endif %}
-    
-    {% if include.stats %}
-    {% include sections/stats.html
-            class="stats"
-            %}
-    {% endif %}
+    {% if include.Type contains "testing" %}       
+        {% if include.stats %}
+            {% include sections/stats.html class="stats" %}
+        {% endif %}
         {% if include.heading-top %}
         <div class="row">
             <div class="col col-md-10 heading text-center mx-auto">
@@ -65,7 +53,15 @@
                 {% endif %}
             </div>
         </div>
-        {% endif %}
+    {% endif %}
+    {% if include.Type contains "technologies" %} 
+        {% include sections/customer-logos.html
+            heading="Technologies we work with"
+            logo-class="gradient-hero-logo fy-p-0"
+            logo-display-class=include.logo-class
+            colored-logos=include.colored-logos
+        %}
+    {% endif %}
 
         <!-------------------------Service devops--------------------------------------------->
         {% if include.Type contains "devops" %}

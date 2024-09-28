@@ -192,7 +192,7 @@ section {
 
 // customer-logo-v2.html
 section.customer-logos-v2 {
-    margin: -105px 0px 105px;    
+    margin: 0px 0px 0px;    
     position: relative;
     .img-fix{
         text-align: center;
@@ -214,6 +214,11 @@ section.customer-logos-v2 {
             text-align: center;
             color: $dark;
             margin-bottom: 2rem;
+        }
+        .img-fix{
+            background: #eff2fc;
+            padding: 20px;
+            border-radius: 12px;
         }
       }
     }

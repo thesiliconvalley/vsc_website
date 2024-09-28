@@ -5,8 +5,6 @@ main:
     url: "#services"
   - name: Clients
     url: "#clients"
-  - name: Testimonials                                             
-    url: "#testimonials"
   - name: Blog
     url: "#blog"
     

@@ -19,7 +19,7 @@ description: "VALLEY STARTUP CONSULTANT"
   show-background-triangle=true
   show-background-ovel=true  
   container-class="hero-container"  
-  heading="Fyle empowers you to:"
+  heading=""
   section1="increase-finance-productivity"
   heading1="50+ Successful Projects"
   section2="automate-compliance"
@@ -29,7 +29,23 @@ description: "VALLEY STARTUP CONSULTANT"
   show-background-triangle=true
 %}
 {% include sections/sections.html
-      clients=true
+      clients=false
+      heading-top=true
+      heading="Delivering Automation Testing Services for Assured Quality and ROI"
+      description=""
+      heading-cta=flase
+      headingCTA-type = ""
+      cta-url=""
+      alt-text=""
+      img-url=""
+      backup-img=""
+      class="blue-gradient heading"
+      Type="technologies"
+      section-id="technologies"
+    %}
+
+{% include sections/sections.html
+      clients=false
       heading-top=true
       heading="Delivering Automation Testing Services for Assured Quality and ROI"
       description="While automation testing offers numerous benefits, achieving it can be challenging. It requires selecting the right tools, building automation test suites, and having a team of scripting experts to tackle various obstacles. Alternatively, you can simplify this process by partnering with VSC."
@@ -76,7 +92,7 @@ description: "VALLEY STARTUP CONSULTANT"
 {% include sections/sections.html
       clients=false
       heading-top=true
-      heading="More than 700 Clients <br> trust VSC in the world"
+      heading="We proudly serve clients <br> across the globe."
       description=""
       heading-cta=flase
       headingCTA-type = ""
@@ -88,24 +104,6 @@ description: "VALLEY STARTUP CONSULTANT"
       Type="clients"
       section-id ="clients"
     %}
-
-{% include sections/sections.html
-      clients=false
-      heading-top=true
-      heading="More than 700 Clients <br> trust VSC in the world"
-      description=""
-      heading-cta=flase
-      headingCTA-type = ""
-      cta-url=""
-      alt-text="testing"
-      img-url="map.svg"
-      backup-img=""
-      class="testimonials"
-      Type="testimonials"
-      section-id ="testimonials"
-    %}
-
-   
     
 {% include sections/sections.html
       clients=false
