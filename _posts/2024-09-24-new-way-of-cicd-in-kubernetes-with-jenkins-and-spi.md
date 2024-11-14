@@ -7,7 +7,6 @@ categories: Tutorial
 author: Arvind Rajpurohit, Karan Patil, Tariq Siddiqui  
 coverImage: https://dz2cdn1.dzone.com/storage/temp/11003693-screenshot-2019-01-05-140134.png
 ---
-
 __Here's a new tool that can help you continuously deploy new builds to your Kubernetes clusters.__
 
 Whether you are a novice or experienced in the world of [continuous integration and continuous delivery (CI/CD)](https://dzone.com/articles/the-complete-introduction-to-cicd-1) and [containerization](https://dzone.com/articles/introduction-to-containerization), this article will equip you with the basic understanding of setting up Spinnaker for your software application delivery needs.
